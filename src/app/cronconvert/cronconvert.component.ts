@@ -18,7 +18,9 @@ export class CronconvertComponent {
   
   convertToQuartz() {
     let quartz = CronToQuartz.getQuartz(this.cron);
-    this.quartz = quartz.toString();
+    if (Array.isArray(quartz) && Array.isArray(quartz[0])) {
+      this.quartz = quartz[0].join(' ');
+    }
   }
 
 }
