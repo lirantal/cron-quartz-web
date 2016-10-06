@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { CronconvertComponent } from './cronconvert/cronconvert.component';
+import { QuartznotationComponent } from './quartznotation/quartznotation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CronconvertComponent
+    CronconvertComponent,
+    QuartznotationComponent
   ],
   imports: [
     BrowserModule,

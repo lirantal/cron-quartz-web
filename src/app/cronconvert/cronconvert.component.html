@@ -5,12 +5,4 @@
     </form>
 </div>
 
-<div class="quartz" *ngIf="quartz">
-    
-    <p class="quartzText">
-    {{quartz}}
-    </p>
-    
-    <label for="quartz" class="quartzNotation">in quartz scheduler notation</label>
-    
-</div>
+<app-quartznotation [quartzNotation]="quartz"></app-quartznotation>
